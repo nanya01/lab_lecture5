@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Lecture Lab 5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <main>
+            <figure>
+                <img v-bind:src="image" :alt="altText">
+            </figure>
+          <header>
+            <h2>{{subject}}</h2>
+          </header>
+          <p>{{location}}</p>
+          <p>{{price}}</p>
+        </main>
+        </div>
+        <script type="text/javascript">
+        var webstore = new Vue({
+            el: '#app',
+            data: {
+                subject:"Math",
+                location:"Dubai",
+                price:100,
+                image:"week 5\math.jpg",
+                altText:"math-quiz",
+            },
+          
+        
+        });
+    </script>
+</body>
+
+</html>
